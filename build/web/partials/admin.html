@@ -1,0 +1,57 @@
+
+
+<div class="row">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6">
+    <div>
+    <h3 class="text-white text-center">Add Movie Details</h3>
+    </div>
+    <form ng-submit="AdminSubmit()">
+      <div class="form-group text-white">
+        <label for="forfirstname"> Movie name</label>
+        <input type="text" ng-model="adminForm.moviename" class="form-control" id="forfirstname"  placeholder="Enter movie name">
+      </div>
+      <div class="form-group text-white">
+        <label for="forlasttname">Certificate</label>
+        <input type="text" ng-model="adminForm.certification" class="form-control" id="forlastname"  placeholder="Certification">
+      </div>
+      <div class="form-group text-white">
+        <label for="exampleInputEmail1">Screen</label>
+        <input type="text" ng-model="adminForm.screen" class="form-control" id="forlastname"  placeholder="Screen">
+<!--        <br>
+        <label class="checkbox-inline"><input type="checkbox" value="">Screen 1</label>
+        <label class="checkbox-inline"><input type="checkbox" value="">Screen 2</label>
+        <label class="checkbox-inline"><input type="checkbox" value="">Screen 3</label>
+        <label class="checkbox-inline"><input type="checkbox" value="">Screen 4</label>-->
+      </div>
+      <div class="form-group text-white">
+        <label for="exampleInputPassword1">Starring</label>
+        <input type="text" ng-model="adminForm.starring" class="form-control" id="exampleInputPassword1" placeholder="Starring">
+      </div>
+      <div class="form-group text-white">
+        <label for="exampleInputPassword1">Director</label>
+        <input type="text" ng-model="adminForm.director" class="form-control" id="exampleInputPassword1" placeholder="Director">
+      </div>
+      <div class="form-group text-white">
+        <label for="forpassword">Timings</label>
+        <div class="row">
+          <div class="col-md-4">
+            <input type="time" ng-model="adminForm.timing" class="form-control" id="forpassword"  placeholder="Timings">
+          </div>
+          <div class="col-md-4">
+            <input type="time" class="form-control" id="forpassword"  placeholder="Timings">
+          </div>
+          <div class="col-md-4">
+            <input type="time" class="form-control" id="forpassword"  placeholder="Timings">
+          </div>
+        </div>
+      </div>
+      <div class="form-group text-white">
+        <label for="forpassword">Photo</label>
+        <input type="text" ng-model="adminForm.poster" class="form-control" id="forpassword"  placeholder="Photo">
+      </div>
+  <input type="submit" value="save"/>
+</form>
+  </div>
+  <div class="col-sm-3"></div>
+</div>

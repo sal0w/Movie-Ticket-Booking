@@ -1,0 +1,56 @@
+body {
+	<background: url('../image/test.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  	background-color:#555;
+  	font-family: 'Open Sans',Arial,Helvetica,Sans-Serif;
+}
+
+.seatSelection {
+  text-align: center;
+  padding: 5px;
+	margin: 15px;}
+
+.seatsReceipt {text-align: center;}
+
+.seatNumber {
+	display: inline;
+	padding: 10px;
+	background-color: #5c86eb;
+	color: #FFF;
+	border-radius: 5px;
+	cursor: default;
+	height: 25px;
+	width: 25px;
+	line-height: 25px;
+	text-align: center;
+ }
+
+.seatRow {padding: 10px;}
+
+.seatSelected {
+	background-color: lightgreen;
+	color: black;
+ }
+
+.seatUnavailable {background-color: gray;}
+
+.seatRowNumber {
+	clear: none;
+	display: inline;
+ }
+
+.hidden {display: none;}
+
+.seatsAmount {max-width: 2em;}
+html *
+{
+   
+   font-family: cursive !important;
+}
+
+.panel-title {display: inline;font-weight: bold;}
+.checkbox.pull-right { margin: 0; }
+.pl-ziro { padding-left: 0px; }

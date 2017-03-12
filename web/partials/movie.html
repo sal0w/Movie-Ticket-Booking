@@ -1,0 +1,11 @@
+<br>
+<div><center> <image ng-src="{{movie.poster}}"  alt="singam"  width="200" height="350"><h3 class="text-white">{{movie.movieName}}</h3><p>{{movie.screen}}<br> Certification: {{movie.certification}} <br>Starring: {{movie.starring}}<br> Director: {{movie.director}}
+  <div class="btn-group" role="group" aria-label="...">
+    <button type="button" class="btn btn-success" onclick="window.location.href = '#/seats';">{{movie.timing}}</button>
+    <button type="button" class="btn btn-danger">3:00pm</button>
+    <button type="button" class="btn btn-danger">7:00pm</button>
+  </div></center></div>
+  <div class="btn-group float-right" role="group" aria-label="...">
+  <button type="button" class="btn btn-success"></button><p>Available</p>
+  <button type="button" class="btn btn-danger"></button><p>Booked</p>
+</div>

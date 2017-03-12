@@ -1,0 +1,84 @@
+
+<table class="table text-white">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Movie</th>
+      <th>Seats</th>
+      <th>Price</th>
+      <th>No of seats</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>{{movie.movieName}}</td>
+      <td>{{seatselect}}</td>
+      <td>{{price}}</td>
+      <td>{{noOfSeats}}</td>
+    </tr>
+  </tbody>
+</table>
+<div class="text-white text-right">Grand Total:{{price}}</div>
+
+<div class="row">
+    <div class="col-md-4"></div>
+       <div class="col-md-4">
+           <div class="panel panel-default">
+               <div class="panel-heading">
+                   <h2 class="panel-title text-white">
+                       Payment Details
+                   </h2>
+
+               </div>
+               <div class="panel-body">
+                   <form role="form">
+                   <div class="form-group">
+                       <label for="cardNumber" class="text-info">
+                           CARD NUMBER</label>
+                       <div class="input-group">
+                           <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number"
+                               required autofocus />
+                           <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                       </div>
+                   </div>
+                     <!-- Name -->
+         <div class="control-group">
+           <label class="control-label text-info"  for="username">CARD HOLDER'S NAME</label>
+           <div class="controls">
+                <input type="text" class="form-control" id="cardNumber" placeholder=""
+                               required  />
+           </div>
+         </div>
+                   <div class="row">
+                       <div class="col-lg-7 col-md-7">
+                           <div class="form-group">
+                               <label for="expityMonth" class="text-info">
+                                   EXPIRY DATE</label>
+                              <div class="row">
+                               <div class="col-lg-6 col-lg-4 pl-ziro">
+                                   <input type="text" class="form-control" id="expityMonth" placeholder="MM" required />
+                               </div>
+                               <div class="col-md-6 col-lg-6 pl-ziro">
+                                   <input type="text" class="form-control" id="expityYear" placeholder="YY" required /></div>
+                                 </div>
+                           </div>
+                       </div>
+                       <div class="col-xs-5 col-md-5 pull-right">
+                           <div class="form-group">
+                               <label for="cvCode" class="text-info" >
+                                   CVV2 CODE</label>
+                               <input type="password" class="form-control" id="cvCode" placeholder="CVV2" required />
+                           </div>
+                       </div>
+                   </div>
+                   </form>
+               </div>
+           </div>
+
+           <br/>
+           <!--<a href="details.html" class="btn btn-success btn-lg btn-block" role="button">Pay</a>-->
+           <button type="button" class="btn btn-success" ng-click="BookSubmit()">Pay</button>
+       </div>
+    <div class="col-md-4"></div></div>
+

@@ -1,0 +1,47 @@
+MEMBER
+
+<table class="table text-white">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>{{member.firstname}}</td>
+      <td>{{member.lastName}}</td>
+      <td>{{member.email}}</td>
+      
+    </tr>
+  </tbody>
+</table>
+BOOKING DETAILS
+<table  class="table text-white">
+  <thead>
+    <tr>
+      
+      <th>Movie</th>
+      <th>Seats</th>
+      <th>Price</th>
+      <th>No Of seats</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="x in usermovies">
+    <td>{{ x.movie }}</td>
+    <td>{{ x.seats }}</td>
+    <td>{{ x.price }}</td>
+    <td>{{ x.noofseats }}</td>
+  </tr>
+  </tbody>
+</table>
+<button class="btn btn-primary" ng-click="logout()">LOGOUT</button>
+
+
+
